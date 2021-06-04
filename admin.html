@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bruno Mars Official Website</title>
+    
+    
+        <!-- google fonts cdn link  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+        <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+  
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+        <a href="index.html" ><img src="assets/images/logo.png" class="logo" alt="logo"></a>
+        
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#home" >Home</a></li>
+                <li><a href="index.html#about" >About</a></li>
+                <li><a href="index.html#album">Album</a></li>
+                <li><a href="https://www.brunomars.com/tour">Tour</a></li>
+                <li><a href="https://www.brunomars.com/store">Store</a></li>
+                <li><a href="https://www.brunomars.com/news">News</a></li>
+
+                <li></li>
+            </ul>
+        </nav>
+        <nav class="login">
+            <ul>
+                <li><a href="admin.html">ADMIN</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <!-- SECTION INPUT -->
+    <section class="input_section" id="inputSong">
+        <h1 class="heading"><i class="fas fa-book-open text-primary"></i> Dashboard<span class="text-primary"> Administrator</span></h1>
+
+
+          <div class="toolbar container">
+            <input class="form-input" type="text" placeholder="Search Song ..." />
+          </div>
+        
+          <div class="input-data container">
+            <h2>Enter Song Dataset</h2>
+            <form>
+                <label for="title">Title</label>
+                <input class="form-input" type="text" id="title" required/>
+
+                <label for="author">Song Writer</label>
+                <input class="form-input" type="text" id="author" required/>
+
+                <label for="year">Year</label>
+                <input class="form-input" type="number" id="year" min="2000" max="2999" required/>
+
+                <label for="album">Album</label>
+                <select id="myAlbum">
+                  <option value="Single">Single</option>
+                  <option value="Earth to Mars">Earth to Mars</option>
+                  <option value="It's Better If You Don't Understand">It's Better If You Don't Understand</option>
+                  <option value="Doo Wops & Hooligans">Doo Wops & Hooligans</option>
+                  <option value="Unorthodox Jukebox">Unorthodox Jukebox</option>
+                  <option value="24K Magic">24K Magic</option>
+                  <option value="Silk Sonic">Silk Sonic</option>
+              </select>
+                
+              <label for="link">Link</label>
+              <input class="form-input" type="text" id="link"  />
+
+                <div class="checkbox">
+                    <input class="switch" type="checkbox" id="isReleased" />
+                    <label for="isReleased">&nbsp;&nbsp;Not Released?</label>
+                </div>
+
+                <button class="button button-primary" type="submit" id="save" >Save as Realeased Song</button>
+            </form>
+          </div>
+    </section>
+
+    <section class="view_section" id ="inputSong">
+      <div class="container" style="overflow-x:auto;">
+         
+
+        <h2>Released Song</h2>
+        <table class="list" id="songTable" >
+          <thead>
+              <tr>
+                  <th>Title</th>
+                  <th>Songwriter</th>
+                  <th>Album</th>
+                  <th>Year</th>
+                  <th>Link</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody class="list-song released">
+          
+          </tbody>
+             
+        </table>   
+       
+
+        <h2>Unreleased Song</h2>
+        <table class="list" id="songTable" >
+          <thead>
+              <tr>
+                  <th>Title</th>
+                  <th>Songwriter</th>
+                  <th>Album</th>
+                  <th>Year</th>
+                  <th>Link</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody class="list-song un-released" >
+          
+          </tbody>
+             
+        </table>   
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright © 2021 - <a href="https://diazam.portfoliosite.net/">Diaz Amaliana</a></p>
+    </footer>
+  
+    
+  
+    <script src="assets/js/admin.js"></script>
+    
+
+
+  </body>
+</html>

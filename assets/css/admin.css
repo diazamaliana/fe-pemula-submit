@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --red:#84382b;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  transition:all .2s linear;
+
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem 8%;
+    padding-top: 9.5rem;
+    background-color:#dcd1bf;
+}
+
+
+
+/*Header*/
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    width:100%;
+    background:#dcd1bf;
+    padding:2rem 10%;
+    box-shadow: 0 .3rem 2rem #ad9f82;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .logo{
+    position: relative;
+    max-width: 120px;
+}
+
+
+header .navbar ul, header ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+header .navbar ul li, header .login ul li{
+    margin-left: 3rem;
+}
+
+header .navbar ul li a, header .login ul li a{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color:#333;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover,
+header .login ul li a.active,
+header .login ul li a:hover{
+    color:var(--red);
+    text-decoration:underline;
+}
+
+header #input_section-bar{
+    font-size: 3rem;
+    color:#333;
+    display: none;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  font-size: 16px;
+  color: #3e2d1a;
+  background-color: #ad9f82;
+  text-align: center;
+}
+footer a{
+  color: #3e2d1a;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+footer a:hover{
+  
+  text-decoration: underline;
+}
+
+
+
+/* ADMINISTRATOR */
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding:0 .5rem;
+    color:#333;
+}
+
+.heading span{
+    color:var(--red);
+}
+
+.input_section h2, .view_section h2{
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding:1rem 0;
+    margin:2rem 0;
+    border-top: .3rem dashed #333;
+    border-bottom: .3rem dashed #333;
+}
+
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin:3 0.5rem;
+} 
+
+.input-data > form > label {
+  margin-bottom: .2rem;
+  font-size: 2rem;
+}
+
+ .input-data .button  {
+  max-width: 30rem;
+  align-self: flex-start;
+  margin-bottom: .25rem;
+  float: right;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+
+th{
+  border-bottom: .2rem solid #3e2d1a;
+}
+
+th, td{
+  text-align: justify;
+  padding: 8px;
+  text-transform: none;
+
+}
+
+tr:hover{
+  padding: 8px;
+  background-color: #ad9f82;
+
+}
+
+.song .button {
+  border: none;
+  color: white;
+  padding: 12px 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin: 4px;
+} 
+
+.form-input, select {
+  width: 99%;
+  padding: 8px 20px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ad9f82;
+  border-radius: 5rem;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+.form-input:focus {
+  border-color: #3e2d1a;
+}
+
+.button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: .5rem 1.5rem;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+
+}
+
+.button:hover, .button:active{
+  background:#dcd1bf;
+  color: #3d3d3d;
+  border:.2rem solid var(--red);
+
+}
+
+.button-primary {
+  background: #84382b;
+  color: #dcd1bf;
+}
+
+
+.warning {
+  background: #d38753;
+}
+
+.success {
+  background: #34955f;
+}
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.checkbox label, .switch{
+  display: inline-block;
+  vertical-align: top;}
+
+.switch {
+  appearance: none;
+  height: 2em;
+  width: 4em;
+  background-color: #ad9f82;
+  border: #ad9f82 solid 0.1em;
+  cursor: pointer;
+  border-radius: 1em;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.switch::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  border: #3e2d1a solid 0.1em;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.switch:checked {
+  background-color: var(--red);
+}
+
+.switch:checked::before {
+  border-color: var(--red);
+  transform: translateX(100%);
+}
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 60%;
+    }
+
+    header .navbar{
+        position: fixed;
+        top:8rem; left:0;
+        width:100%;
+        background:#dcd1bf;
+        border-top: .2rem solid #ad9f82;
+        border-bottom: .2rem solid #ad9f82;
+        transform:scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    header .navbar.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem;
+        border-top: .2rem solid #ad9f82;
+        border-bottom: .2rem solid #ad9f82;
+    }
+
+    header .navbar ul li, header .login ul li {
+        margin:1.5rem;
+        width: 100%;
+    }
+
+    header .login ul li a{
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    header .navbar ul li a {
+        display: block;
+        color:#333;
+        padding-left: 2rem;
+        font-size: 2rem;
+    }
+
+    header .navbar ul li a:hover,
+    header .navbar ul li a.active{
+        color:var(--red);
+    }
+}
+
+@media (max-width:500px){
+
+  html{
+      font-size: 50%;
+  }
+
+  section{
+      padding:1rem 5%;
+      padding-top: 9.5rem;
+  }
+
+  
+}
+
+@media (max-width:320px){
+
+  html{
+      font-size: 45%;
+  }
+  
+
+  
+}
+  
