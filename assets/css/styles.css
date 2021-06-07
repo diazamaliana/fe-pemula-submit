@@ -18,6 +18,7 @@
 
 html{
     font-size: 70%;
+    overflow-x: hidden;
 }
 
 body{
