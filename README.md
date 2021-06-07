@@ -7,4 +7,4 @@ This is a class submission for Learn to Create Front-End Web for Beginners.
 ![alt text](https://github.com/diazamaliana/fe-pemula-submit/blob/master/Screenshot%20(385).png)
 
 # Certificate
-
+https://www.dicoding.com/certificates/JMZVMR9K3ZN9
